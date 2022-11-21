@@ -11,6 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Component
 public class Basket {
 
+
     private static final AtomicInteger COUNTER = new AtomicInteger(1);
     private final Integer id;
     private List<Integer> listId = new ArrayList<>();

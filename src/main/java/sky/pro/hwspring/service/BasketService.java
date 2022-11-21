@@ -8,6 +8,7 @@ import java.util.*;
 @Service
 public class BasketService {
 
+
     private final Basket basket;
     private final List<Basket> baskets = new ArrayList<>();
 
@@ -20,11 +21,8 @@ public class BasketService {
     }
 
     public void addBasket(List<Integer> id) {
-        Basket basket = new Basket();
-        BasketService basketService = new BasketService(basket);
         for (Integer number : id) {
-            basketService.basket.addIdToList(number);
+            this.basket.addIdToList(number);
         }
-        this.baskets.add(basket);
     }
 }
