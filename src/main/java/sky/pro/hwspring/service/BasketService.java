@@ -21,11 +21,8 @@ public class BasketService {
     }
 
     public void addBasket(List<Integer> id) {
-        Basket basket = new Basket();
-        BasketService basketService = new BasketService(basket);
         for (Integer number : id) {
-            basketService.basket.addIdToList(number);
+            this.basket.addIdToList(number);
         }
-        this.baskets.add(basket);
     }
 }
